@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8"/>
+    <title>İletişim</title>
+    <link rel="stylesheet" href="iletisim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="icon" href="https://www-static.warframe.com/images/warframe/favicon.ico">
+    <style>
+        ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #383636; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; 
+}
+    </style>
+    
+    
+</head>
+<body>
+
+  
+  <header class="header">
+        <div class="container">
+          
+        <script>document.addEventListener('DOMContentLoaded', function () {
+            const currentPage = window.location.pathname.split('/').pop(); 
+        
+            
+            document.querySelectorAll('.links a').forEach(function (link) {
+                const linkPage = link.getAttribute('href').split('/').pop(); 
+        
+                
+                if (currentPage === linkPage) {
+                    link.classList.add('active-link');
+                }
+            });
+        });
+        </script>
+
+        <script>document.addEventListener('DOMContentLoaded', function () {
+            const currentPage = window.location.pathname.split('/').pop(); 
+        
+            
+            document.querySelectorAll('.dropdown_menu li a').forEach(function (link) {
+                const linkPage = link.getAttribute('href').split('/').pop(); 
+        
+                
+                if (currentPage === linkPage) {
+                    link.classList.add('active-link');
+                }
+            });
+        });
+        </script>
+        
+        
+         <nav class="navbar">
+            <ul class="links">
+               <a href="anasayfa.html">Anasayfa </a>
+               <a href="iletisim.html">İletişim</a>
+               <a href="plat.html">Platinium Satın Al</a>
+               <a href="nasil.html">Nasıl Oynanır?</a>
+           </ul>   
+           <div>
+            <a href="anasayfa.html"><img src="logo.png" alt="Warframe Logo" class="logo"></a>
+            
+            
+
+        </div>
+        
+           <div class="toggle_btn">
+            <div class="icon"><i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="anasayfa.html">Anasayfa </a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="plat.html">Platinium Satın Al</a></li>
+            <li><a href="nasil.html">Nasıl Oynanır?</a></li>
+            
+            
+        </div>    
+        </nav>
+        </div>
+        
+    </header>
+    
+    <div class="iletisimform">
+        <div class="xform">
+        <h1>İLETİŞİM</h1>
+        <p>Bir sorunuz mu var? Buraya istediğiniz soruyu sorabilirsiniz.</p>
+        <form>
+            <div class="row">
+                <div class="column">
+                    <label for="name">Ad</label><br>
+                    <input type="text" id="name" placeholder="Adınızı Buraya Girin">
+                </div>
+                <div class="column">
+                    <label for="email">E-posta</label><br>
+                    <input type="email" id="email" placeholder="E-postanızı Buraya Girin">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="subject">Konu</label><br>
+                    <input type="text" id="subject" placeholder="İletmek İstediğiniz Konuyu Buraya Girin">
+                </div>
+                <div class="column">
+                    <label for="contact">Numara</label><br>
+                    <input type="tel" id="contact" placeholder="Numaranızı Buraya Girin">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="issue">Mesaj</label> <br>
+                    <textarea id="issue" placeholder="İletmek İstediğiniz Mesajı Buraya Girin" rows="3"></textarea>
+                </div>
+            </div>
+            <input class="gonder" type="submit">
+            <input class="sifirla"type="reset">
+        </form>
+    </div>
+</div>
+    <div class="background-container"></div>
+    
+    
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+         toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+         }
+    </script>
+
+</div>
+
+
+<div class="alt-navbar">
+    <div class="alt-logo"><img src="logo3.png" alt=""></div>
+    <nav>
+        <ul>
+            <a href="iletisim.html">İletişim</a>
+            <a href="gizlilik.html">Gizlilik</a>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

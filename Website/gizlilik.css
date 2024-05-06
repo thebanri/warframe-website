@@ -1,0 +1,275 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+}
+
+.container {
+    width: 100%;
+    
+}
+
+.header {
+    background-color: #ffffff;
+    color: #ff0000;
+    width: 100%;
+    height: 65px;
+    
+    
+}
+
+
+.links a.active-link {
+    color: #2259aa; 
+}
+
+.links {
+    margin-top: 20px;
+    float: right;
+}
+
+.links a {
+    
+    color: #000000;
+    padding: 10px 15px;
+    margin: 0 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+
+.links a:hover {
+    
+    color: #000000;
+    padding: 10px 15px;
+    margin: 0 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+
+.navbar .toggle_btn {
+    margin-top: -40px;
+}
+
+.toggle_btn {
+    color: #1C5878;
+    font-size: 30px;
+    margin-left: 85%;
+}
+
+
+
+
+.dropdown_menu  {
+    position: absolute;
+    right:90%;
+    width: 150px;
+    margin-right: -75%;
+    margin-top:-2%;
+    height: 0px;
+    background: #143f57;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    list-style: none;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 3;
+    
+}
+
+.dropdown_menu.open{
+    height: 300px;
+    z-index: 3;
+    border: 2px solid white;
+    
+}
+
+
+.dropdown_menu li{
+    padding: 0.6rem 20px 20px;
+    font-size: 20px;
+    
+
+}
+
+
+.dropdown_menu li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 0px;
+    font-size: 17px;
+    
+}
+
+.dropdown_menu li a:hover{
+    color: rgb(96, 15, 247);
+}
+
+.dropdown_menu li a.active-link{
+    color: red;
+}
+
+
+ .logo {
+
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 5px;
+
+}
+
+
+
+
+.logo-container img {
+    width:35%;
+    margin-left:35% ;
+    z-index: 2;
+}
+
+.logo-container {
+    
+    margin-top: -700px;
+    
+}
+
+
+.alt-navbar {
+    background-color: #ffffff; /* Navbar arka plan rengi */
+    color: #ffffff; /* Yazı rengi */
+    padding: 10px; /* Navbar içi dolgu */
+    text-align: center; /* Metni ortala */
+    position: absolute;
+    margin-bottom: -600px;
+    bottom: 0; /* Sayfanın alt kısmına yapışık olması için */
+    width: 100%; /* Genişlik 100% */
+    margin-left: -20px;
+    float: right;
+    z-index: 100; /* Diğer elemanların üzerinde görünmesi için bir sıra belirle */
+}
+
+.alt-navbar a{
+    color: #000000;
+    padding: 10px 15px;
+    margin: 0 10px;
+    margin-left: -10px;
+    text-decoration: none;
+
+}
+.alt-logo img {
+    width: 50px;
+    
+   
+}
+
+.background-container {
+    background-color: #000000;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 150vh; 
+    overflow: hidden; 
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    
+    z-index: -1;
+    
+}
+
+
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #007bff;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+p{
+    padding: 40px 20px;
+    color:#000000;
+}
+
+
+@media screen and (max-width: 804px) {
+
+    
+
+    .toggle_btn {
+        display: block;
+        margin-top: 5px;
+    }
+    
+    .links{
+        display: none;
+    }
+    
+    .links a{
+        display: none;
+    }
+
+    .logo {
+
+        width: 35%;
+        margin-top: 20px;
+        margin-left: 5px;
+    
+    }
+    
+    .background-container{
+        height: 220vh;
+    }
+    
+    .alt-navbar{
+        margin-bottom: -1100px;
+        margin-left:-20px; 
+    }
+    
+}
+
+
+@media screen and (max-width: 549px){
+    .background-container {
+        height: 10%;
+
+    }
+    .alt-navbar{
+        margin-bottom: -2000px;
+    }
+
+}
+
+@media screen and (min-width: 805px) {
+
+    .navbar .toggle_btn{
+        display: none;
+    }
+    
+
+   
+}
+
+
+
